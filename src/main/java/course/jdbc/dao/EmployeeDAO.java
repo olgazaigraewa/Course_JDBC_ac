@@ -16,10 +16,10 @@ public interface EmployeeDAO {
     List<Employee> getAllEmployees();
 
     // Изменение объекта по id
-    void updateById(int id, int age);
+    void update(Employee employee);
 
     // Удаление объекта по id
-    void deleteById(int id);
+    void delete(Employee employee);
 
 
 }

@@ -2,18 +2,65 @@ package course.jdbc;
 
 import course.jdbc.dao.EmployeeDAO;
 import course.jdbc.dao.EmployeeDAOImpl;
-import course.jdbc.model.City;
 import course.jdbc.model.Employee;
 
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Application {
 
     public static void main(String[] args) throws SQLException {
 
-        // Создаем переменные с данными для подключения к базе
+        EmployeeDAO employeeDAO = new EmployeeDAOImpl();
+        Employee employee1 = new Employee(23, "Irina", "Klimova", "F", 35, 6);
+
+         employeeDAO.create(employee1);
+
+        System.out.println(employeeDAO.getById(5));
+
+        List<Employee> list = employeeDAO.getAllEmployees();
+
+        for (Employee employee : list){
+            System.out.println(employee);
+        }
+
+        Employee employee2 = new Employee(8, "Oleg", "Savinov", "M", 25, 1);
+
+        employeeDAO.update(employee2);
+
+        employeeDAO.delete(employee1);
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     /*   // Создаем переменные с данными для подключения к базе
         final String user = "postgres";
         final String pass = "asx4478/";
         final String url = "jdbc:postgresql://localhost:5432/skypro";
@@ -47,8 +94,8 @@ public class Application {
                     System.out.println(last_name);
                     System.out.println(gender);
                     System.out.println(age);
-                }
-
+                }*/
+/*
                 //Создаем объект класса EmployeeDAOImpl
                 EmployeeDAO employeeDAO = new EmployeeDAOImpl(connection);
 
@@ -71,11 +118,7 @@ public class Application {
                 employeeDAO.updateById(7, 51);
 
                 //Вызываем метод удаления данных из базы
-                employeeDAO.deleteById(20);
-            }
-        }
-    }
-}
+                employeeDAO.deleteById(20);*/
 
 
 
