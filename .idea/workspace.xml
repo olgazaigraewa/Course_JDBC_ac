@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09727d14-f3d6-4248-95e8-10fdef5b17ce" name="Changes" comment="HW JDBC">
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/jdbc/config/HibernateSessionFactoryUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="09727d14-f3d6-4248-95e8-10fdef5b17ce" name="Changes" comment="HW7 Hibernate: введение, Entity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/course/jdbc/dao/CityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/course/jdbc/dao/CityDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/course/jdbc/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/jdbc/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/course/jdbc/dao/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/jdbc/dao/EmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/course/jdbc/dao/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/jdbc/dao/EmployeeDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/course/jdbc/config/HibernateSessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/jdbc/config/HibernateSessionFactoryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/course/jdbc/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/jdbc/model/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/course/jdbc/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/jdbc/model/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +125,7 @@
       <workItem from="1675945643723" duration="8534000" />
       <workItem from="1675978455757" duration="2333000" />
       <workItem from="1676010028576" duration="9375000" />
-      <workItem from="1676033758276" duration="11767000" />
+      <workItem from="1676033758276" duration="20115000" />
     </task>
     <task id="LOCAL-00001" summary="Первый коммит">
       <created>1676022824055</created>
@@ -142,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676023178713</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="HW7 Hibernate: введение, Entity">
+      <created>1676053212869</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676053212869</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Первый коммит" />
     <MESSAGE value="HW JDBC" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW JDBC" />
+    <MESSAGE value="HW7 Hibernate: введение, Entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW7 Hibernate: введение, Entity" />
   </component>
 </project>

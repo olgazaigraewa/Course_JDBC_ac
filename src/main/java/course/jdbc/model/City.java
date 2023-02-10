@@ -1,17 +1,29 @@
 package course.jdbc.model;
 
+import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
+
+@Entity
+@Table(name = "city")
 public class City {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "city_id")
     private int city_id;
+
+    @Column(name = "city_name")
     private String city_name;
+
+    @OneToMany(mappedBy = "city",cascade = CascadeType.ALL)
+    private List<Employee>employees;
 
     public City() {
     }
 
-    public City(int city_id, String city_name) {
-        this.city_id = city_id;
+    public City(String city_name) {
         this.city_name = city_name;
     }
 
@@ -29,6 +41,14 @@ public class City {
 
     public void setCity_name(String city_name) {
         this.city_name = city_name;
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
     }
 
     @Override
